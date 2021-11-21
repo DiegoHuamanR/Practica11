@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="col-md-4">
+    @if (Request.IsAuthenticated)
+    {
+        <h1>Hola</h1>
+        <br />
+        <p class="lead"> Es un gusto volver a estar contigo, @EjercicioPropuesto2.Models.CurrentUser.Get.Name</p>
+    }
+    else
+    {
+        <h2>Bienvenido a Enterprise DDA</h2>
+        <br />
+        <p>
+            Registrate o Inicia Sesiónpara poder administrar los productos.
+        </p>
+    }
+</div>
