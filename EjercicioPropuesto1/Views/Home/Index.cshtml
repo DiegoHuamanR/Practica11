@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    @if (Request.IsAuthenticated)
+    {
+        <h1>Hola</h1>
+        <br />
+        <p class="lead"> Es un gusto volver a estar contigo</p>
+       
+    }
+    else
+    {
+        <h1>MARKET TRUE</h1>
+        <p class="lead">Registrate o Inicia Sesión para poder manipular los Productos</p>
+    }
+
+
+</div>
